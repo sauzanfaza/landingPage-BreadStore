@@ -4,7 +4,7 @@ import { ChevronDownIcon } from "@heroicons/react/20/solid";
 
 export default function Navbar() {
   return (
-    <header className="w-full p-4 flex items-center justify-between bg-[#5C3D2E] text-[#FEFED2]">
+    <header className="w-full fixed top-0 z-50 p-4 flex items-center justify-between bg-[#5C3D2E] text-[#FEFED2]">
       {/* Logo */}
       <div className="flex items-center pl-4 font-bold text-lg">
         SourDough.
@@ -12,9 +12,9 @@ export default function Navbar() {
 
       {/* Menu desktop */}
       <nav className="hidden sm:flex gap-6 font-josefin">
-        <a href="">menu</a>
-        <a href="">contact</a>
-        <a href="">package</a>
+        <a href="" className="text-[#FEFED2] hover:text-white">about</a>
+        <a href="" className="text-[#FEFED2] hover:text-white">menu</a>
+        <a href="" className="text-[#FEFED2] hover:text-white">order!</a>
       </nav>
 
       {/* Menu mobile (dropdown) */}
@@ -32,7 +32,15 @@ export default function Navbar() {
               <MenuItem>
                 <a
                   href="#"
-                  className="block px-4 py-2 text-sm text-[#FEFED2] hover:bg-white/5 hover:text-white"
+                  className="block px-4 py-2 text-sm text-[#FEFED2] hover:bg-white/5 hover:text-white font-josefin"
+                >
+                  about
+                </a>
+              </MenuItem>
+              <MenuItem>
+                <a
+                  href="#"
+                  className="block px-4 py-2 text-sm text-[#FEFED2] hover:bg-white/5 hover:text-white font-josefin"
                 >
                   menu
                 </a>
@@ -40,17 +48,9 @@ export default function Navbar() {
               <MenuItem>
                 <a
                   href="#"
-                  className="block px-4 py-2 text-sm text-[#FEFED2] hover:bg-white/5 hover:text-white"
+                  className="block px-4 py-2 text-sm text-[#FEFED2] hover:bg-white/5 hover:text-white font-josefin"
                 >
-                  contact
-                </a>
-              </MenuItem>
-              <MenuItem>
-                <a
-                  href="#"
-                  className="block px-4 py-2 text-sm text-[#FEFED2] hover:bg-white/5 hover:text-white"
-                >
-                  package
+                  order!
                 </a>
               </MenuItem>
             </div>
