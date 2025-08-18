@@ -5,7 +5,7 @@ export default function Hero() {
             <div className="absolute inset-0 bg-black/40"></div>
 
             {/* Konten */}
-            <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white p-8">
+            <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-[#FEFED2] p-8">
                 <h1 className="text-2xl sm:text-6xl font-bold mb-2 font-josefin">
                     Experience the Taste of Artisan Sourdough
                 </h1>
