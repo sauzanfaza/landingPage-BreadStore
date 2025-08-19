@@ -1,4 +1,3 @@
-import { div } from "motion/react-client"
 
 export default function Gallery() {
     const gallery = [
@@ -13,10 +12,10 @@ export default function Gallery() {
     return(
         <>
         <div className="min-h-screen flex flex-col items-center bg-[#38211E] p-15">
-        <h1 className="flex items-center mb-4 text-2xl font-josefin text-[#FEFED2] text-center">Take a look with our loaf!</h1>
-        <div className="grid grid-cols sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 p-4">
+        <h1 className="flex items-center mb-4 text-2xl font-josefin text-white text-center">Take a look with our loaf!</h1>
+        <div className="grid grid-cols sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 p-4">
             {gallery.map((picture) => (
-                <div className="bg-white mb-4 rounded-sm">
+                <div className="bg-white mb-4 rounded-sm hover:scale-105 transition-transform duration-300">
                     <div
                     key={picture.id}
                     className="m-4"

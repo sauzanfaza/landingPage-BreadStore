@@ -2,6 +2,7 @@ import About from "./components/About";
 import Gallery from "./components/Gallery";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import ContactUs from "./components/ContactUs";
 
 export default function Home() {
   return(
@@ -10,6 +11,7 @@ export default function Home() {
     <Hero />
     <About />
     <Gallery />
+    <ContactUs />
     </>
   )
 }

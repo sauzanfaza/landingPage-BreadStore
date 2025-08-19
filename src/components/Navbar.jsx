@@ -4,7 +4,7 @@ import { ChevronDownIcon } from "@heroicons/react/20/solid";
 
 export default function Navbar() {
   return (
-    <header className="w-full fixed top-0 z-50 p-4 flex items-center justify-between bg-[#5C3D2E] text-[#FEFED2]">
+    <header className="w-full fixed top-0 z-50 p-4 pr-10 flex items-center justify-between bg-[#5C3D2E] text-white">
       {/* Logo */}
       <div className="flex items-center pl-4 font-bold text-lg">
         SourDough.
@@ -12,15 +12,15 @@ export default function Navbar() {
 
       {/* Menu desktop */}
       <nav className="hidden sm:flex gap-6 font-josefin">
-        <a href="" className="text-[#FEFED2] hover:text-white">about</a>
-        <a href="" className="text-[#FEFED2] hover:text-white">menu</a>
-        <a href="" className="text-[#FEFED2] hover:text-white">order!</a>
+        <a href="" className="text-white cursor-pointer">about</a>
+        <a href="" className="text-white cursor-pointer">menu</a>
+        <a href="" className="text-white cursor-pointer">order!</a>
       </nav>
 
       {/* Menu mobile (dropdown) */}
       <div className="sm:hidden">
         <Menu as="div" className="relative inline-block text-left">
-          <MenuButton className="inline-flex justify-center rounded-md bg-white/10 px-3 py-2 text-sm font-semibold text-[#FEFED2] hover:bg-white/20">
+          <MenuButton className="inline-flex justify-center rounded-md bg-white/10 px-3 py-2 text-sm font-semibold text-white hover:bg-white/20">
             ☰
           </MenuButton>
 
