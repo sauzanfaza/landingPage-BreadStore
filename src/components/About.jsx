@@ -2,7 +2,7 @@ import { motion } from "motion/react"
 
 export default function About() {
     return(
-        <div className="flex flex-col md:flex-row items-center bg-white min-h-screen py-10 px-5">
+        <div id="about" className="flex flex-col md:flex-row items-center bg-white min-h-screen py-10 px-5">
         <div className="w-full p-4 text-center md:text-left">
             <h2 className="text-2xl font-bold mb-4 font-josefin">Judul Sourdough</h2>
             <p className="text-gray-800 font-josefin">

@@ -1,6 +1,4 @@
-import { useState } from "react";
 import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
-import { ChevronDownIcon } from "@heroicons/react/20/solid";
 
 export default function Navbar() {
   return (
@@ -12,9 +10,9 @@ export default function Navbar() {
 
       {/* Menu desktop */}
       <nav className="hidden sm:flex gap-6 font-josefin">
-        <a href="" className="text-white cursor-pointer">about</a>
-        <a href="" className="text-white cursor-pointer">menu</a>
-        <a href="" className="text-white cursor-pointer">order!</a>
+        <a href="#about" className="text-white cursor-pointer">about</a>
+        <a href="#menu" className="text-white cursor-pointer">menu</a>
+        <a href="#order" className="text-white cursor-pointer">order!</a>
       </nav>
 
       {/* Menu mobile (dropdown) */}
